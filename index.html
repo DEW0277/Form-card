@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="modal_box">
+      <div id="modal" class="modal">
+        <h2>Yangi mahsulot qo'shish</h2>
+        <form onsubmit="noLoading()" id="form" action="">
+          <div>
+            <label for="name">Product Name</label><br />
+            <input id="iput_name" type="text" placeholder="product name..." />
+          </div>
+          <div>
+            <label for="">Description</label><br />
+            <textarea id="textarea_value" placeholder="description..." rows="3" cols="20"></textarea>
+          </div>
+          <div>
+            <label for="">Price:</label><br />
+            <input id="input_price" type="number" placeholder="price..." />
+          </div>
+          <div>
+            <label for="">Image URL:</label><br />
+            <input id="input_url" type="text" placeholder="image url..." />
+          </div>
+
+          <button id="add" class="modal_btn">Add</button>
+          <button id="cencel" class="modal_btn__cancel">Cencel</button>
+          <button type="reset" class="modal_btn__clear">Clear</button>
+
+        </form>
+      </div>
+
+      <button onclick="openModal()" class="open_modal__btn" id="add_product__btn">Add Product</button>
+    </div>
+
+    <div id="products_cards" class="products_cards">
+     
+    </div>
+    
+
+
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
